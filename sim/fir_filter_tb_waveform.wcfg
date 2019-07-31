@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fir_filter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fir_filter_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2533839565fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="231"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject type="logic" fp_name="/fir_filter_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_filter_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_filter_tb/load_tap">
+      <obj_property name="ElementShortName">load_tap</obj_property>
+      <obj_property name="ObjectShortName">load_tap</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_filter_tb/new_tap">
+      <obj_property name="ElementShortName">new_tap[17:0]</obj_property>
+      <obj_property name="ObjectShortName">new_tap[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_filter_tb/data_in_vld">
+      <obj_property name="ElementShortName">data_in_vld</obj_property>
+      <obj_property name="ObjectShortName">data_in_vld</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_filter_tb/data_in">
+      <obj_property name="ElementShortName">data_in[24:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[24:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeMin">-1.62096e+07</obj_property>
+      <obj_property name="AnalogYRRangeMax">5.73076e+07</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_filter_tb/data_out_vld">
+      <obj_property name="ElementShortName">data_out_vld</obj_property>
+      <obj_property name="ObjectShortName">data_out_vld</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_filter_tb/data_out">
+      <obj_property name="ElementShortName">data_out[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[47:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

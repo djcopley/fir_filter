@@ -1,0 +1,30 @@
+CAPI=2:
+name : copl:modules:fir_filter:1.0
+
+filesets:
+  hdl:
+    files:
+      - hdl/fir_filter.vhd : {file_type : vhdlSource-93}
+    logical_name: modules
+
+  sim:
+    files:
+      - sim/fir_filter_tb.vhd : {file_type : vhdlSource-93}
+      - sim/fir_filter_tb_waveform.wcfg : {file_type : user, copyto : ./}
+      - sim/taps.data : {file_type : user, copyto : ./}
+      - sim/sig.data : {file_type : user, copyto : ./}
+
+targets:
+  default:
+    filesets: [hdl]
+
+  sim:
+    default_tool: xsim 
+    filesets: [hdl, sim]
+    tools:
+      modelsim:
+        vlog_options: [-timescale=1ns/1ns]
+      xsim:
+        xelab_options: [--debug, all, --timescale, 1ns/1ns]
+        xsim_options: [--view, fir_filter_tb_waveform.wcfg]
+    toplevel: fir_filter_tb 
